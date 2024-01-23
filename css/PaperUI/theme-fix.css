@@ -1,0 +1,139 @@
+/* Decorator for style.css (PaperUI), for yn.ect.fyi
+
+Copyright (C) 2023 Ect07
+
+This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
+
+This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License along with this program.  If not, see <http://www.gnu.org/licenses/>. */
+
+@font-face {
+    font-family: "verdana";
+    src:
+      local("verdana"),
+      url("./fonts/verdana.woff") format("woff");
+  }
+
+:root{
+    --background-light:#ffe6ea;
+    --theme-color-light:#ff899999;
+    --theme-color-dark:#ff667a99;
+    --font-size:17px;
+    --font-family:verdana,'Noto Sans CJK SC','Microsoft Yahei UI','Pingfang SC','SimHei';
+}
+
+.paperui-paper{
+    margin:6%;
+    background: #ffe6ea;
+}
+
+.header {
+    overflow: hidden;
+    padding: 7px;
+    margin: 0;
+    border-radius: 0;
+    position: relative;
+}
+.header-right {
+    float:right;
+}
+.header-center-wrap{
+    text-align: center;
+    margin:5px;
+}
+.header-logo{
+    padding: 5px;
+}
+.header-logo img{
+    height: 40px;
+    width:auto;
+}
+.header-label{
+    font-family: verdana,'Noto Sans CJK SC','Microsoft Yahei UI','Pingfang SC','SimHei';
+    padding:3px;
+    font-size: 21px;
+}
+.content{
+    padding:30px;
+
+}
+
+a:hover{
+    transition: all 0.8s;
+}
+
+
+
+.content-container{
+    height:auto;
+    background: #faf9ff;
+    padding-top:50px;
+    padding-bottom: 50px;
+    box-shadow:0 -10px 10px -14px var(--text-color) inset;/* A little trick to set inset shadow only for bottom. */
+}
+
+.simple-footer {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 70%;
+    text-align: center;
+    margin-top: 80px;
+    margin-bottom: 15px;
+    padding-bottom: 80px;
+    color: #b2a1a3;
+    font-size: 13px;
+}
+
+.simple-footer a {
+    color:#b2a1a3;
+    text-decoration: none;
+    line-height: 25px;
+    border-radius: 0;
+}
+.simple-footer a:hover {
+    background-color: #dfd2d4;
+}
+
+/*textarea scrollbar*/
+
+/* width */
+textarea::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+textarea::-webkit-scrollbar-track {
+    background: #ffe6ea; 
+}
+
+/* Handle */
+textarea::-webkit-scrollbar-thumb {
+    background: #ff8999
+}
+
+/* Handle on hover */
+textarea::-webkit-scrollbar-thumb:hover {
+    background: #ff8999
+}
+
+@media (prefers-color-scheme: dark){
+    .paperui-paper{
+        background: #222;
+        box-shadow:0px 0px 10px -4px #000;
+    }
+    .content-container{
+        background: #191919;
+        box-shadow:0 -10px 10px -14px #000 inset;
+    }
+    .simple-footer{
+        color:#999;
+    }
+    .simple-footer a{
+        color:#999;
+    }
+    .simple-footer a:hover {
+        background-color: #555;
+    }
+}
+

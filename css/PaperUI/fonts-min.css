@@ -1,0 +1,41 @@
+@font-face {
+    font-family: 'yrdzst';
+    src: url(./fonts/yrdzst-Regular.otf);
+    font-weight:normal;
+    font-weight: 400;
+}
+/*
+@font-face {
+    font-family: 'yrdzst';
+    src: url(./fonts/yrdzst-Medium.otf);
+    font-weight: 400;
+}
+*/
+@font-face {
+    font-family: 'yrdzst';
+    src: url(./fonts/yrdzst-Bold.otf);
+    font-weight:bold;
+    font-weight:600;
+}/*
+@font-face {
+    font-family: 'yrdzst';
+    src: url(./fonts/yrdzst-Semibold.otf);
+    font-weight:700;
+    font-weight:bolder;
+}
+@font-face {
+    font-family: 'yrdzst';
+    src: url(./fonts/yrdzst-Heavy.otf);
+    font-weight:800;
+}*/
+@font-face {
+    font-family: 'yrdzst';
+    src: url(./fonts/yrdzst-Light.otf);
+    font-weight:lighter;
+    font-weight:250;
+}/*
+@font-face {
+    font-family: 'yrdzst';
+    src: url(./fonts/yrdzst-Extralight.otf);
+    font-weight:100;
+}*/
