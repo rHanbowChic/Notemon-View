@@ -38,7 +38,7 @@
                     if ($instance_folder != ''){
                         if (is_dir($instance_path)){
                             if (isset($_GET['record'])){
-                                $record_file = $_GET['record'];
+                                $record_file = str_replace('..','',$_GET['record']);//如果不加这个，访问者可直接通过"../"访问records目录以外的文件，包括服务器上的任何文件！“../../../../../blog/wp-config.php”想想就可怕。
                                 if (is_file($instance_path.$record_file)){
                                     $M = substr($record_file,0,2);
                                     $D = substr($record_file,2,2);
